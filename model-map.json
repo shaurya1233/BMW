@@ -1,0 +1,45 @@
+{
+  "driverDoor": "door_fr",
+  "cameras": {
+    "exterior": { "pos": [5, 2.2, 5.5], "target": [0, 0.7, 0] },
+    "door": { "pos": [1.6, 1.4, 3.2], "target": [0.2, 1.0, 0.6] },
+    "driver": { "pos": [0.05, 1.15, 0.45], "target": [0.6, 1.0, 0.45] },
+    "passenger": { "pos": [0.05, 1.15, -0.45], "target": [0.6, 1.0, -0.45] },
+    "rear": { "pos": [-0.75, 1.2, 0], "target": [0, 1.05, 0] }
+  },
+  "tour": [
+    { "do": "toggle", "id": "door_fr" }, { "do": "toggle", "id": "door_fr" },
+    { "do": "toggle", "id": "bonnet" }, { "do": "toggle", "id": "boot" },
+    { "do": "toggle", "id": "headlight_l" }, { "do": "toggle", "id": "headlight_r" },
+    { "do": "view", "id": "driver" }, { "do": "toggle", "id": "steering" },
+    { "do": "view", "id": "rear" }, { "do": "reset", "id": "" }
+  ],
+  "parts": {
+    "door_fl": { "kind": "hinge", "label": "Front left door", "axis": "y", "open": -1.1 },
+    "door_fr": { "kind": "hinge", "label": "Front right door", "axis": "y", "open": 1.1 },
+    "door_rl": { "kind": "hinge", "label": "Rear left door", "axis": "y", "open": -1.1 },
+    "door_rr": { "kind": "hinge", "label": "Rear right door", "axis": "y", "open": 1.1 },
+    "bonnet": { "kind": "hinge", "label": "Bonnet", "axis": "z", "open": 1.0 },
+    "boot": { "kind": "hinge", "label": "Boot", "axis": "z", "open": -1.0 },
+    "window_fl": { "kind": "slide", "label": "Front left window", "open": -0.35 },
+    "window_fr": { "kind": "slide", "label": "Front right window", "open": -0.35 },
+    "window_rl": { "kind": "slide", "label": "Rear left window", "open": -0.35 },
+    "window_rr": { "kind": "slide", "label": "Rear right window", "open": -0.35 },
+    "vent_l": { "kind": "spin", "label": "Left air vent louvre", "axis": "z", "open": 0.9 },
+    "vent_r": { "kind": "spin", "label": "Right air vent louvre", "axis": "z", "open": 0.9 },
+    "steering": { "kind": "spin", "label": "Steering wheel", "axis": "x", "open": 0.6 },
+    "btn_1": { "kind": "toggle", "label": "Dashboard button 1" },
+    "btn_2": { "kind": "toggle", "label": "Dashboard button 2" },
+    "headlight_l": { "kind": "toggle", "label": "Left headlight" },
+    "headlight_r": { "kind": "toggle", "label": "Right headlight" },
+    "taillight_l": { "kind": "toggle", "label": "Left tail light" },
+    "taillight_r": { "kind": "toggle", "label": "Right tail light" },
+    "wheel_fl": { "kind": "spin", "label": "Front left wheel", "axis": "z", "open": 6.283 },
+    "wheel_fr": { "kind": "spin", "label": "Front right wheel", "axis": "z", "open": 6.283 },
+    "wheel_rl": { "kind": "spin", "label": "Rear left wheel", "axis": "z", "open": 6.283 },
+    "wheel_rr": { "kind": "spin", "label": "Rear right wheel", "axis": "z", "open": 6.283 },
+    "seat_fl": { "kind": "static", "label": "Front left seat" },
+    "seat_fr": { "kind": "static", "label": "Front right seat" },
+    "seat_r": { "kind": "static", "label": "Rear seat" }
+  }
+}

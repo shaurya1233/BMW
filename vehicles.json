@@ -1,0 +1,18 @@
+{
+  "vehicles": [],
+  "model": { "file": null, "mobileFile": null },
+  "_note": "paints/seats/wheels below are generic studio finishes for the placeholder, not manufacturer options. Replace with client-approved options.",
+  "paints": [
+    { "id": "graphite", "label": "Graphite", "hex": "#1C1F24" },
+    { "id": "silver", "label": "Silver", "hex": "#C9CDD2" },
+    { "id": "ice", "label": "Ice", "hex": "#F5F7F8" }
+  ],
+  "seats": [
+    { "id": "graphite", "label": "Graphite", "hex": "#2A2D33" },
+    { "id": "silver", "label": "Silver", "hex": "#9AA0A8" }
+  ],
+  "wheels": [
+    { "id": "graphite", "label": "Graphite", "hex": "#3A3F47" },
+    { "id": "silver", "label": "Silver", "hex": "#C9CDD2" }
+  ]
+}
